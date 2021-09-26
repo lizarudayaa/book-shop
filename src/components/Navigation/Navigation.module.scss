@@ -1,0 +1,31 @@
+.menu{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  padding-right: 35px;
+
+}
+
+
+.link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: darkgray;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover{
+    font-weight: 600;
+    color: black;
+  }
+  & span{
+    padding-left: 5px;
+  }
+}
+.active{
+  color: black;
+}
