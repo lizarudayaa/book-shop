@@ -9,6 +9,7 @@ const totalprice = () => (state) =>
   state.items.card
     .map((i) => +i.price * i.amount)
     .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 
 export default {
   isLoading,

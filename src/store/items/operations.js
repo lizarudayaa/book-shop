@@ -1,7 +1,6 @@
 import actions from "./actions";
 import axios from "axios";
 import { modals } from "../../components/Modal/ModalDeclaration";
-import { itemsOperations } from "./index";
 
 const fetchData = (data) => (dispatch, getState) => {
   axios(data).then((res) => {
@@ -38,7 +37,7 @@ const {
   deleteItem,
   clearCard,
 } = actions;
-
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   fetchData,
   setModalId,

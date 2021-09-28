@@ -46,16 +46,16 @@ const setItem = (item) => ({
 });
 
 const setAmount = (num) => ({
-  type: types.AMOUNT,
+  type: "AMOUT",
   payload: num,
 });
 
 const clearCard = () => ({
   type: types.CLEAR_CARD,
 });
-
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
-  fetchData,
+  fetchData: fetchData,
   setIsLoading,
   setModal,
   fetchFavorites,

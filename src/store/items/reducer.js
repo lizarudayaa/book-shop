@@ -72,7 +72,7 @@ const reducer = (state = initialState, action) => {
         updatedItems[existingItemIndex] = updatedItem;
       }
       localStorage.setItem("card", JSON.stringify(updatedItems));
-      return { ...state, card: updatedItems };
+      return { ...state, card: updatedItems, totalPrice: updatedPrice };
     }
     case types.SET_ITEM: {
       return { ...state, item: action.payload };
