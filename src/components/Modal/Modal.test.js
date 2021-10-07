@@ -1,9 +1,6 @@
 import Modal from "./Modal";
-import { render, cleanup, screen, fireEvent } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import store from "../../store/store";
-import { Provider } from "react-redux";
-import { modalOperations } from "../../store/modal";
 
 const testProps = {
   header: "header",
@@ -13,32 +10,17 @@ const testProps = {
 };
 
 describe("Testing Modal Component", () => {
-  beforeEach(() => {
-    store.dispatch(modalOperations.setModal(1));
-  });
   test("Render Component", () => {
-    render(
-      <Provider store={store}>
-        <Modal />
-      </Provider>
-    );
+    render(<Modal />);
   });
 
   test("Passing text to header", () => {
-    const { getByRole } = render(
-      <Provider store={store}>
-        <Modal header={testProps.header} />
-      </Provider>
-    );
+    const { getByRole } = render(<Modal header={testProps.header} />);
     expect(getByRole("heading")).toBeInTheDocument();
   });
 
   test("Passing prop text", () => {
-    const { getByText } = render(
-      <Provider store={store}>
-        <Modal text={testProps.text} />
-      </Provider>
-    );
+    const { getByText } = render(<Modal text={testProps.text} />);
     expect(getByText(testProps.text)).toBeInTheDocument();
   });
 
