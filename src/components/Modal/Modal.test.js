@@ -1,5 +1,5 @@
 import Modal from "./Modal";
-import { render, cleanup, screen } from "@testing-library/react";
+import { render, cleanup, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import store from "../../store/store";
 import { Provider } from "react-redux";
@@ -49,9 +49,9 @@ describe("Testing Modal Component", () => {
 
   test("closing modal by clicking close button", () => {
     const { getByTestId } = render(<Modal closeModal={testProps.closeModal} />);
-    expect(getByTestId("modal-close")).toBeInTheDocument();
     const closeBtn = getByTestId("modal-close");
-    userEvent.click(closeBtn);
-    expect(getByTestId("modal")).not.toBeNull();
+    expect(testProps.closeModal).not.toHaveBeenCalled();
+    fireEvent.click(closeBtn);
+    expect(testProps.closeModal).toHaveBeenCalledTimes(1);
   });
 });
