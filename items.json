@@ -1,0 +1,72 @@
+[
+  {
+    "name": "A History of Art in 21 Cats",
+    "price": 30,
+    "img": "img/1.jpg",
+    "id": 1,
+    "color": "red"
+  },
+  {
+    "name": "A Clockwork Orange",
+    "price": 20,
+    "img": "img/2.jpg",
+    "id": 2,
+    "color": "orange"
+  },
+  {
+    "name": "Alice in Wonderland ",
+    "price": 10,
+    "img": "img/3.jpg",
+    "id": 3,
+    "color": "light blue"
+  },
+  {
+    "name": "Wuthering Heights",
+    "price": 10,
+    "img": "img/4.jpg",
+    "id": 4,
+    "color": "dark blue"
+  },
+  {
+    "name": "Humiliated and Insulted",
+    "price": 25,
+    "img": "img/5.jpg",
+    "id": 5,
+    "color": "red"
+  },
+  {
+    "name": "The Twelve Chairs",
+    "price": 18,
+    "img": "img/6.jpg",
+    "id": 6,
+    "color": "red"
+  },
+  {
+    "name": "The Heart Of A Dog",
+    "price": 20,
+    "img": "img/7.jpg",
+    "id": 7,
+    "color": "purple"
+  },
+  {
+    "name": "The Catcher in the Rye",
+    "price": 12,
+    "img": "img/8.jpg",
+    "id": 8,
+    "color": "nude orange"
+  },
+  {
+    "name": "Brave New World",
+    "price": 14,
+    "img": "img/9.jpg",
+    "id": 9,
+    "color": "black"
+  },
+  {
+    "name": "Homo Deus",
+    "price": 29,
+    "img": "img/10.jpg",
+    "id": 10,
+    "color": "black"
+  }
+]

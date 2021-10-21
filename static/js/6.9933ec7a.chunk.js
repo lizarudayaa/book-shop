@@ -1,0 +1,2 @@
+(this.webpackJsonphw5=this.webpackJsonphw5||[]).push([[6],{328:function(t,c,e){"use strict";e.r(c);e(1);var n=e(9),s=e(5),r=e(4),i=e(59),o=e(19),u=e(18),a=e(2);c.default=function(){var t=Object(n.c)(s.c.favoritesList()),c=Object(r.g)(),e=t.map((function(t){return Object(a.jsx)(i.a,{data:t},t.id)}));return t.length?Object(a.jsx)(o.f,{children:e}):Object(a.jsxs)(o.e,{children:[Object(a.jsx)("h3",{children:"No items found"}),Object(a.jsx)(u.a,{color:"black",text:"Products",onClick:function(){return c.push("/home")}})]})}}}]);
+//# sourceMappingURL=6.9933ec7a.chunk.js.map
